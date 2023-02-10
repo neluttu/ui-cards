@@ -1,0 +1,76 @@
+body, html {
+    margin: 0px;
+    padding:0px;
+    width: 100%;
+    height: 100%;
+    background-color: #e7ebf4;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#main {
+    padding: 40px; background-color: #f0f3f8; -webkit-box-shadow: 0px 0px 15px 5px #dae0ec; box-shadow: 0px 0px 15px 5px #dae0ec; max-width: 1390px; margin: auto; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 10px;
+    border-radius: 15px;
+}
+
+#main > div {
+    margin: 10px;
+    text-align: center;
+    min-height: 250px;
+    min-width: 220px;
+    font-size: 22px;
+    line-height: 32px;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 14px;
+    transition: all 0.4s ease;
+}
+
+#main > div:hover {
+    -webkit-box-shadow: 0px 0px 15px 5px #dae0ec; box-shadow: 0px 0px 15px 5px #dae0ec;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#main > div:hover .wrapper div:first-of-type, #main > div:hover .wrapper div:nth-last-of-type(2) {
+    color: #718aae;
+}
+
+#main > div img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#main div .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    line-height: normal;
+}
+
+#main div .wrapper div:first-of-type {
+    width: 70%;
+    margin-bottom: 2%;
+    text-align: left;
+    font-weight: 500;
+    transition: all 0.4s ease;
+}
+
+#main div .wrapper div:nth-of-type(2) {
+    width: 28%;
+    margin-bottom: 2%;
+    text-align: right;
+    font-weight: 500;
+    transition: all 0.4s ease;
+}
+
+#main div .wrapper div:nth-child(3n) {
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+}
